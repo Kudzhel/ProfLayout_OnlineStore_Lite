@@ -1,0 +1,298 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: "Lato";
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.block_flex {
+    display: flex;
+}
+
+
+.header {
+    background-color: #222222;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.header_all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+   
+}
+
+.header__logo {
+    margin-right: 40px;
+}
+
+.header__form-search {
+    position: relative;
+}
+
+
+.header_img-search {
+    top: 6px;
+    left: 10px;
+    position: absolute;
+}
+
+.header__input {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    min-width: 500px;
+    height: 38px;
+    border-radius: 19px;
+    opacity: 0.7;
+    padding-left: 50px;
+    padding-right: 20px;
+    color: white;
+    outline: none;
+    display: none;
+}
+
+.header__form-search:hover .header__input {
+    z-index: 1;
+    display: block;
+    left: 40px;
+}
+
+.header_right-icons {
+    margin-left: 40px;
+}
+
+.block_head {
+    background-color: #F1E4E6;
+    height: 764px;
+}
+
+.block_head__left {
+   flex-grow: 1;
+}
+
+.block_head__right {
+    flex-grow: 1;
+}
+
+.block_head-txt {
+    display: flex;
+    margin-top: 290px;
+    margin-left: 63px;
+}
+
+.pink_vert {
+    height: 92px;
+    width: 12px;
+    margin-right: 16px;
+    background-color: #F16D7F;
+}
+
+.head_h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.head_h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #222222;
+}
+
+.head_h2-pink {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #F16D7F;
+}
+
+
+
+
+/*
+
+Стили для неполучившегося эффекта наведения в блоке с коллекциями
+
+
+.block_collections {
+    margin-top: 65px;
+    
+}
+
+.block_collections__top {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.collection-1 {
+    position: relative;
+    
+}
+
+.woman-1 {
+    height: 260px;
+    width: 360px;
+    position: absolute;
+    background-image: url(imgs/collection-women-1.png);
+} 
+
+.woman-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(imgs/collection-women-2.png);
+    position: absolute;
+    display: none;
+}
+
+.collection-1:hover .woman-2 {
+    z-index: 1;
+    display: block;
+  } 
+
+
+.h4_16px {
+    margin-top: 105px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.h3_24px {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #F16D7F;
+}
+
+.man-1 {
+    height: 260px;
+    width: 360px;
+    position: absolute;
+    background-image: url(imgs/collection-men-1.png);
+} 
+
+.man-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(imgs/collection-men-2.png);
+    display: none;
+    position: absolute;
+}
+
+.collection-1:hover .man-2 {
+    z-index: 1;
+    display: block;
+  } 
+
+.kid-1 {
+    height: 260px;
+    width: 360px;
+    position: absolute;
+    background-image: url(imgs/collection-kids-1.png);
+} 
+
+.kid-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(imgs/collection-kids-2.png);
+    position: absolute;
+    display: none;
+}
+
+.collection-1:hover .kid-2 {
+    z-index: 1;
+    display: block;
+} 
+
+.accesories-2 {
+    height: 260px;
+    background-image: url(imgs/collection-accesories-2.png);
+    margin-top: 30px;
+    border: 1px solid transparent;
+    position: absolute;
+    display: none;
+}
+
+*/
+
+
+
+
+
+/* Без эффекта наведения */
+
+.block_collections {
+    margin-top: 65px;
+    
+}
+
+.block_collections__top {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.woman-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(imgs/collection-women-2.png);
+}
+
+.h4_16px {
+    margin-top: 105px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.h3_24px {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #F16D7F;
+}
+
+.man-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(imgs/collection-men-2.png);
+}
+
+.kid-2 {
+    height: 260px;
+    width: 360px;
+    background-image: url(imgs/collection-kids-2.png);
+}
+
+
+.accesories-2 {
+    height: 260px;
+    background-image: url(imgs/collection-accesories-2.png);
+    margin-top: 30px;
+    border: 1px solid transparent;
+}
