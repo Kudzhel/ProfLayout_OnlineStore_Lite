@@ -372,3 +372,154 @@ body {
   color: #F26376;
   padding: 14px 38px 14px 38px;
 }
+
+.black-box {
+  background-color: #222224;
+  height: 341px;
+  display: flex;
+  align-items: center;
+}
+
+.bb-advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage-1 {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery-img {
+  height: 32px;
+  margin-bottom: 28px;
+}
+
+.sales-img {
+  height: 40px;
+  margin-bottom: 19px;
+}
+
+.quality-img {
+  height: 35px;
+  margin-bottom: 25px;
+}
+
+.advantage-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  margin-bottom: 16px;
+}
+
+.advantage-descr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.footer-bg {
+  height: 448px;
+  display: flex;
+  align-items: center;
+  background-image: url(imgs/footer_bg-img2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-photo {
+  height: 96px;
+  margin-bottom: 28px;
+}
+
+.footer-quote {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.footer-subs {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subs-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #222224;
+}
+
+.subs-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+  margin-bottom: 32px;
+}
+
+.subs-email {
+    display: flex;
+}
+
+.footer__forminput {
+    display: block;
+    background-color: #E1E1E1;
+    border: none;
+    box-sizing: border-box;
+    min-width: 256px;
+    height: 49px;
+    border-radius: 24px 0 0 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(7, 7, 7);
+    outline: none;
+
+}
+
+.footer__formsubmit {
+    display: block;
+    background-color: #F16D7F;
+    border: none;
+    box-sizing: border-box;
+    height: 49px;
+    border-radius: 0 24px 24px 0;
+    padding-left: 20px;
+    padding-right: 25px;
+    color: white;
+    outline: none;
+}
+
+.footer__formsubmit:hover {
+    background-color: #E05C6E;
+}
