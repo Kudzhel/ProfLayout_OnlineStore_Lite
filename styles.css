@@ -31,7 +31,7 @@ body {
 
 .header__left {
     display: flex;
-   
+
 }
 
 .header__logo {
@@ -74,7 +74,7 @@ body {
     padding-right: 30px;
     color: rgb(7, 7, 7);
     outline: none;
-    
+
 }
 
 .header__formsubmit {
@@ -174,7 +174,6 @@ body {
     color: #F16D7F;
 }
 
-
 .collections-box {
     margin-top: 65px;
 }
@@ -202,7 +201,7 @@ body {
 .coll-box__item-hover {
     display: none;
     position: absolute;
-} 
+}
 
 
 .coll-box__item2 {
@@ -231,6 +230,7 @@ body {
 
 .featured-items_block {
     margin-top: 96px;
+    margin-bottom: 96px;
 }
 
 .sec_header {
@@ -254,7 +254,7 @@ body {
 
 .items_box {
     margin-top: 48px;
-    margin-bottom: 95px;
+    margin-bottom: 18px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -334,14 +334,14 @@ body {
 .item:hover .add-link {
     display: flex;
 }
- 
+
 .add {
     display: flex;
     align-items: center;
     padding: 10px;
     border: 1px solid #ffffff;
     text-decoration: none;
-    
+
 }
 
 .add:hover {
@@ -355,4 +355,20 @@ body {
     line-height: 17px;
     color: #FFFFFF;
     margin-left: 8px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-items__button {
+  text-decoration: none;
+  border: 1px solid #F26376;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F26376;
+  padding: 14px 38px 14px 38px;
 }
