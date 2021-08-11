@@ -532,6 +532,10 @@ body {
     background-color: #E05C6E;
 }
 
+.footer1__formsubmit:active {
+  background-color: #CB4154;
+}
+
 .footer2 {
   background-color: #222224;
   height: 79px;
