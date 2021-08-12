@@ -94,8 +94,12 @@ body {
     background-color: #E05C6E;
 }
 
+.header__right {
+  display: flex;
+}
 
 .header_right-icons {
+  display: block;
     margin-left: 40px;
 }
 
