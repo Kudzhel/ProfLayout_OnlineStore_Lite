@@ -4,7 +4,7 @@ padding: 0;
 }
 
 body {
-    font-family: "Lato";
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -27,6 +27,7 @@ body {
 .header_all {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__left {
@@ -35,7 +36,7 @@ body {
 }
 
 .header__logo {
-    margin-right: 40px;
+  padding: 24px 20px;
 }
 
 .header__searchbox {
@@ -45,12 +46,13 @@ body {
 .header__searchimg {
     position: absolute;
     top: 5px;
-    padding-right: 15px;
+    padding: 24px 20px;
 }
 
 .header__searchform {
     position: absolute;
     left: 40px;
+    padding: 24px 20px;
     display: none;
 }
 
@@ -91,25 +93,30 @@ body {
 }
 
 .header__formsubmit:hover {
-    background-color: #E05C6E;
+  background-color: #E05C6E;
 }
 
 .header__right {
   display: flex;
+  align-items: flex-end;
+}
+
+.menu__img {
+  padding: 35px 20px;
 }
 
 .header_right-icons {
   display: block;
-    margin-left: 40px;
+  padding: 35px 20px;
 }
 
 .block_head {
-    background-color: #F1E4E6;
-    height: 764px;
+  background-color: #F1E4E6;
+  height: 764px;
 }
 
 .block_head__left {
-   flex-grow: 1;
+  flex-grow: 1;
 }
 
 .block_head__right {

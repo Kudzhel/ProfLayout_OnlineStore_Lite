@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfLayout_OnlineStore_Lite</title>
     <script src="https://kit.fontawesome.com/5acaf4f96e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    
 </head>
-<section class="header">
+<nav class="header">
     <div class="container header_all">
         <div class="header__left">
             <a href="index.html">
@@ -30,12 +33,19 @@
             </div>
         </div>
         <div class="header__right">
-            <img src="imgs/header_menu.svg" alt="menu">
-            <img class="header_right-icons" src="imgs/header_personal.svg" alt="personal">
-            <img class="header_right-icons" src="imgs/header_cart.svg" alt="cart">
+            <div class="menu">
+                <img class="menu__img" src="imgs/header_menu.svg" alt="menu">
+                <div class="menu__box"></div>
+            </div>
+            <a href="#">
+                <img class="header_right-icons" src="imgs/header_personal.svg" alt="personal">
+            </a>
+            <a href="#">
+                <img class="header_right-icons" src="imgs/header_cart.svg" alt="cart">
+            </a>
         </div>
     </div>
-</section>
+</nav>
 <section class="block_head">
     <div class="container block_flex">
         <div class="block_head__left">
@@ -58,7 +68,7 @@
     </div>
 </section>
 
-<article class="collections-box container">
+<section class="collections-box container">
     <div class="coll-box__top">
         <a href="#">
             <div class="coll-box__item1">
@@ -99,7 +109,7 @@
             </div>
         </div>
     </a>
-</article>
+</section>
 
 <section class="featured-items_block container">
     <h2 class="sec_header">Fetured Items</h5>
