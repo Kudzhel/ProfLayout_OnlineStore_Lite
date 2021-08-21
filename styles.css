@@ -26,6 +26,11 @@ p {
   margin: 0 auto;
 }
 
+.container-1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .block_flex {
   display: flex;
   padding: 0;
@@ -813,6 +818,10 @@ p {
   border-bottom: 1px solid #EAEAEA;
 }
 
+.img-pos {
+  margin: 0 auto;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: #535050;
 }
@@ -837,9 +846,4 @@ p {
 
 .fas:hover {
   color: #F16D7F;
-}
-
-.box {
-  height: 100px;
-  background-color: #806ca0;
 }/*# sourceMappingURL=styles.css.map */

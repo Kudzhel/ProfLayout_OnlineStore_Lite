@@ -26,6 +26,11 @@
         margin: 0 auto;
     }
 
+    .container-1600 {
+      max-width: 1600px;
+      margin: 0 auto;
+  }
+
     .block_flex {
       display: flex;
       padding: 0;
@@ -839,6 +844,10 @@
       border-bottom: 1px solid #EAEAEA;
     }
 
+    .img-pos {
+      margin: 0 auto;
+    }
+
     .carousel-control-next-icon, .carousel-control-prev-icon {
       background-color: rgb(83, 80, 80); 
     }
@@ -865,10 +874,7 @@
       color: $color-pink;
     }
 
-    .box {
-      height: 100px;
-      background-color: rgb(128, 108, 160);
-    }
+   
 
 
       
