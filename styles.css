@@ -5,6 +5,15 @@
 
 body {
   font-family: "Lato", sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+footer {
+  margin-top: auto;
 }
 
 p {
@@ -19,6 +28,7 @@ p {
 
 .block_flex {
   display: flex;
+  padding: 0;
 }
 
 .header {
@@ -32,6 +42,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 .header__left {
@@ -39,7 +50,7 @@ p {
 }
 
 .header__logo {
-  padding: 24px 20px;
+  padding: 24px 20px 24px 0;
 }
 
 .header__searchbox {
@@ -102,6 +113,24 @@ p {
 .header__right {
   display: flex;
   align-items: flex-end;
+}
+
+.cart-round_pos {
+  position: relative;
+}
+
+.cart_quantity {
+  text-align: center;
+  background-image: url(imgs/cart_round.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: 44px;
 }
 
 .header_right-icons {
@@ -697,4 +726,76 @@ p {
 .fa-twitter:hover {
   background-color: #F16D7F;
   color: #ffffff;
+}
+
+.product-head {
+  background-color: #F8F3F4;
+}
+
+.product-head-box {
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-block {
+  display: block;
+}
+
+.txt {
+  font-style: normal;
+  font-weight: normal;
+}
+.txt_hover-pink:hover {
+  color: #E05C6E;
+}
+.txt_hover-grey:hover {
+  color: #000000;
+}
+.txt_pink {
+  color: #F16D7F;
+}
+.txt_grey1 {
+  color: #4D4D4D;
+}
+.txt_black {
+  color: #000000;
+}
+.txt_white {
+  color: #ffffff;
+}
+.txt_size-24 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.txt_size-18 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+}
+.txt_size-16 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.txt_size-14 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.txt_size-12 {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+.txt_link {
+  text-decoration: none;
+}
+.txt_bold {
+  font-weight: 700;
+}
+.txt__cart-round {
+  line-height: 19px;
 }/*# sourceMappingURL=styles.css.map */
