@@ -5,7 +5,6 @@
     
     body {
       font-family: 'Lato', sans-serif;
-      height: 100vh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -14,7 +13,7 @@
 
     footer {
       margin-top: auto;
-  }
+    }
 
     p {
         margin-top: 0;
@@ -34,12 +33,6 @@
     .block_flex {
       display: flex;
       padding: 0;
-  }
-
-  .button {
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
     
     @import "variables";
@@ -172,18 +165,21 @@
       background-color: #fff;
       padding: 16px 16px 35px 35px;
       box-sizing: border-box;
-      box-shadow: 5px 5px 20px #d4d4d4;
+      box-shadow: 5px 5px 20px #15151530;
       min-height: 764px;
       width: 232px;
       position: absolute;
       top: 81px;
       right: -121px;
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .3s;
       z-index: 1;
     }
     
     .block_menu:hover .menu__box {
-      display: block;
+      visibility: visible;
+      opacity: 1;  
     }
     
     .close_box {
@@ -368,6 +364,7 @@
     .featured-items_block {
         margin-top: 96px;
         margin-bottom: 96px;
+        padding: 0;
     }
     
     .sec_header {
@@ -395,6 +392,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        &_mg {
+          margin: 63px 0 128px;
+        }
     }
     
     .item {
@@ -584,6 +585,7 @@
     .footer1-content {
       display: flex;
       justify-content: space-between;
+      padding: 0;
     }
     
     .review {
@@ -609,7 +611,7 @@
     }
     
     .footer1-subs {
-      width: 360px;
+      min-width: 360px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -769,11 +771,11 @@
     .txt {
       font-style: normal;
       font-weight: normal;
-
+  
       &_hover-pink:hover {
         color: $color-pinkhoover;
       }
-
+  
       &_hover-grey:hover {
         color: #000000;
       }
@@ -781,60 +783,80 @@
       &_pink {
         color: $color-pink; 
       }
-
+  
       &_grey1 {
         color: $color-grey1;
       }
-
+  
       &_black {
         color: #000000;
       }
-
+  
       &_white {
         color: #ffffff; 
       }
-
+  
       &_size-24 {
-        font-weight: normal;
+        font-weight: 300;
         font-size: 24px;
         line-height: 29px;
       }
-
+  
       &_size-18 {
         font-weight: 300;
         font-size: 18px;
         line-height: 22px;
       }
-
+  
       &_size-16 {
         font-weight: normal;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 16px;
       }
-
+  
       &_size-14 {
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
       }
-
+  
       &_size-12 {
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
       }
-
+  
       &_link {
         text-decoration: none;
       }
-
+  
       &_bold {
         font-weight: 700;
       }
-
+  
+      &_display-bl {
+        display: block;
+      }
+  
       &__cart-round {
         line-height: 19px;
         
+      }
+  
+      &__align { 
+        text-align: center;
+      }
+  
+      &__margin-b48 {
+        margin-bottom: 48px;
+      }
+  
+      &__margin-b32 {
+        margin-bottom: 32px;
+      }
+  
+      &__margin-b65 {
+        margin-bottom: 65px;
       }
     }
 
@@ -874,8 +896,208 @@
       color: $color-pink;
     }
 
-   
+    .product-info_box {
+      background-color: #ffffff;
+      border: 1px solid #EAEAEA;
+      box-sizing: border-box;
+      padding: 64px;
+      transform: translate(0px, -65px);
+    }
 
+    .product-line {
+      background-color: $color-pink;
+      height: 3px;
+      width: 63px;
+      margin: 0 auto;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .product-txt-box {
+      max-width: 555px;
+      margin: 0 auto;
+    }
+
+    .product-options {
+      width: 641px;
+      border-top: 1px solid #EAEAEA;
+      margin: 0 auto;
+      padding-top: 65px;
+    }
+
+    
+    .button {
+      padding: 10px 40px;
+      width: 211px;
+      
+      &_text-pink {
+        color: $color-pink;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 12px;
+      }
+
+      &_link {
+        text-decoration: none;
+      }
+
+      &_bd {
+        border: 1px solid $color-pink;
+      }
+
+      &_bgc {
+        background-color: #fff;
+      }
+
+      &__mg-0-auto {
+        margin: 0 auto;
+      }
+
+      &_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+
+/* Chrome, Opera, Safari */
+.details summary::-webkit-details-marker {
+  display: none;
+}
+.details :focus {
+  outline: 0;
+}
+  /* Firefox */
+.details, summary {
+  display: block;
+}
+.details summary:before {
+  content: "▲ ";
+}
+.details[open] summary:before {
+  content: "▼ ";
+}
+
+.product-options_box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 388px;
+
+}
+
+.product-options_input {
+  width: 136px;
+  text-align: left;
+
+  &_width-size {
+    width: 118px;
+  }
+
+  &_width-qu {
+    width: 99px;
+  }
+}
+
+
+.product-options_input-size {
+  width: 145px;
+  text-align: left;
+}
+
+.product-options_input-quantity {
+  width: 145px;
+  text-align: left;
+}
+
+.product-options_input-box {
+  position: relative;
+}
+
+.product-options_input-choose {
+  position: relative;
+}
+
+.product-options_list {
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  color: $color-grey1;
+  padding: 16px;
+  width: 140px;
+  position: absolute;
+  background: #ffffff;
+  top: 23px;
+  left: 0;
+  box-shadow: 0px 3px 2px #00000012;
+
+  &_width-size {
+    width: 128px;
+  }
+
+  &_width-qu {
+    width: 114px;
+  }
+}
+
+.product-options_opt {
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.product_opt-pic {
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-right: 10px;
+}
+
+.product_opt-pic_lilac {
+  background-color: #c8b1db;
+}
+
+.product_opt-pic_yellow {
+  background-color: #fff7a2;
+}
+
+.product_opt-pic_white {
+  background-color: #ffffff;
+  border: 1px solid $color-grey2;
+}
+
+.product-options_input-name {
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey1;
+}
+
+.product_arrow {
+  position: absolute;
+  right: 8px;
+}
+
+.margin-block {
+  height: 48px;
+}
+
+.product_featured-items_block {
+  padding: 0;
+}
+
+
+
+
+
+ 
+
+  
+
+   
+   
 
       
 
