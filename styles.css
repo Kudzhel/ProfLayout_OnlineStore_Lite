@@ -1347,7 +1347,7 @@ p {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
-  padding: 10px 0;
+  padding: 10px 0 20px;
   display: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1371,11 +1371,12 @@ p {
 
 .chapter-list {
   list-style-type: none;
-  padding: 22px 11px;
+  padding: 22px 11px 0;
 }
 
 .chapter-a {
   text-decoration: none;
+  line-height: 30px;
 }
 
 .form_selects {
