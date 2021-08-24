@@ -956,7 +956,7 @@ p {
 }
 
 .txt_size-14 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
 }
@@ -973,6 +973,10 @@ p {
 
 .txt_bold {
   font-weight: 600;
+}
+
+.txt_medium {
+  font-weight: 400;
 }
 
 .txt_display-bl {
@@ -1001,6 +1005,22 @@ p {
 
 .txt_pd-10 {
   padding: 10px 0;
+}
+
+.txt_pd-20 {
+  padding: 20px 0;
+}
+
+.txt_pd-r {
+  padding-right: 150px;
+}
+
+.txt_pd-r2 {
+  padding-right: 200px;
+}
+
+.txt_height37 {
+  line-height: 37px;
 }
 
 .product-carousel {
@@ -1300,18 +1320,62 @@ p {
   padding: 0;
 }
 
-.filter-box {
+.filter {
+  position: relative;
+  margin-right: 300px;
+}
+
+.filter-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 300px;
+  padding-left: 20px;
 }
 
 .filter-pic {
   padding: 10px;
+}
+
+.filter-box {
+  width: 360px;
+  position: absolute;
+  z-index: 2;
+  top: -7px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+  padding: 10px 0;
+  display: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.filter:hover .filter-box {
+  display: block;
+}
+
+.filter-chapters {
+  padding: 10px 20px 0;
+}
+
+.chapter-name {
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.chapter-list {
+  list-style-type: none;
+  padding: 22px 11px;
+}
+
+.chapter-a {
+  text-decoration: none;
 }
 
 .form_selects {
