@@ -1013,6 +1013,10 @@ p {
   margin: 0 auto;
 }
 
+.carousel {
+  position: initial;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: #535050;
 }
@@ -1022,6 +1026,7 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   opacity: 1;
+  top: -240px;
 }
 
 .carousel-control-prev {
@@ -1029,6 +1034,7 @@ p {
       -ms-flex-pack: start;
           justify-content: flex-start;
   opacity: 1;
+  top: -240px;
 }
 
 .fas {
