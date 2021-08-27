@@ -1297,8 +1297,7 @@ p {
 }
 
 .product_arrow {
-  position: absolute;
-  right: 8px;
+  padding-left: 10px;
 }
 
 .margin-block {
@@ -1389,6 +1388,42 @@ p {
           justify-content: space-between;
 }
 
+.catalog-options_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog-options-input {
+  padding-right: 20px;
+}
+
+.catalog-options_list {
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  color: #4D4D4D;
+  padding: 16px;
+  position: absolute;
+  background: #ffffff;
+  top: 23px;
+  left: 0;
+  -webkit-box-shadow: 0px 3px 2px #00000012;
+  box-shadow: 0px 3px 2px #00000012;
+  z-index: 4;
+}
+
+.catalog-check {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1399,23 +1434,53 @@ p {
   margin-bottom: 96px;
 }
 
-.pagination-box a {
-  color: black;
+.pagination-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination-list {
+  padding: 0 14px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+}
+
+.fa, .fas {
+  color: #000000;
+  font-size: 14px;
+}
+
+.pagination__item {
+  color: #b4b4b4;
   float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
+  padding: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-/* Стиль активной/текущей ссылки */
-.pagination-box a.active {
-  background-color: dodgerblue;
-  color: white;
+.pagination__item_pink {
+  color: #F16D7F;
 }
 
-/* Добавить серый цвет фона при наведении курсора мыши */
-.pagination-box a:hover:not(.active) {
-  background-color: #ddd;
+.pagination__item:hover {
+  color: #F16D7F;
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */

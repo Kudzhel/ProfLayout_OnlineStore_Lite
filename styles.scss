@@ -1158,8 +1158,7 @@ p {
 }
 
 .product_arrow {
-  position: absolute;
-  right: 8px;
+  padding-left: 10px;
 }
 
 .margin-block {
@@ -1239,31 +1238,83 @@ p {
   justify-content: space-between;
 }
 
+.catalog-options_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-options-input {
+  padding-right: 20px;
+}
+
+.catalog-options_list {
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  color: #4D4D4D;
+  padding: 16px;
+  
+  position: absolute;
+  background: #ffffff;
+  top: 23px;
+  left: 0;
+  -webkit-box-shadow: 0px 3px 2px #00000012;
+  box-shadow: 0px 3px 2px #00000012;
+  z-index: 4;
+}
+
+.catalog-check {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
   margin-bottom: 96px;
 }
 
-.pagination-box a {
-  color: black;
+.pagination-box {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-list {
+  padding: 0 14px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+}
+
+.fa, .fas {
+  color: #000000;
+  font-size: 14px;
+}
+
+.pagination__item {
+  color: #b4b4b4;
   float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
+  padding: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  transition: color 0.3s;
+
+  &_pink {
+    color: $color-pink;
+  }
 }
 
-/* Стиль активной/текущей ссылки */
-.pagination-box a.active {
-  background-color: dodgerblue;
-  color: white;
+.pagination__item:hover {
+  color: $color-pink;
+  font-weight: 400;
 }
-
-/* Добавить серый цвет фона при наведении курсора мыши */
-.pagination-box a:hover:not(.active) {background-color: #ddd;}
-
-
-
 
 
  

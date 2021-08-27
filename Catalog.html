@@ -238,31 +238,108 @@
         </nav>
         
         <div class="param_selects">
-            <form class="form_selects" action="action_form.php" target="_top">
-                <select class="catalog-select">
-                  <option value="trending">TRENDING NOW</option>
-                  <option value="trending">HTML</option>
-                  <option value="trendings">CSS</option>
-                  <option value="trending">PHP</option>
-                  <option value="trending">JavaScript</option>
-                </select>
-    
-                <select class="catalog-select">
-                    <option value="books">Книги</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="php">PHP</option>
-                    <option value="js">JavaScript</option>
-                </select>
-    
-                <select class="catalog-select">
-                    <option value="books">Книги</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="php">PHP</option>
-                    <option value="js">JavaScript</option>
-                </select>
-    
+            <form action="#">
+                <div class="catalog-options_box">
+
+                    <div class="catalog-options-input">
+                        <details class="product-options-input_choose">
+
+                            <summary class="product-options-input_name      product-options-input_hover-pink">
+                                TRENDING NOW
+                                <span class="product_arrow">
+                                    <img src="imgs/accordion-arrow_grey.svg" alt="choose">
+                                </span>
+                            </summary>
+
+                            <ul class="catalog-options_list">
+                                <li class="product-options_opt">  
+                                    TRNDNG NW
+                                </li>
+                                <li class="product-options_opt">
+                                    TRNDNG&nbsp;STRD
+                                </li>
+                                <li class="product-options_opt">
+                                    TRNDNG&nbsp;TMRW
+                                </li>
+                            </ul>
+
+                        </details>
+                    </div>
+
+                    <div class="catalog-options-input">
+                        <details class="product-options-input_choose">
+
+                            <summary class="product-options-input_name      product-options-input_hover-pink">
+                                SIZE
+                                <span class="product_arrow">
+                                    <img src="imgs/accordion-arrow_grey.svg" alt="choose">
+                                </span>
+                            </summary>
+
+                            <ul class="catalog-options_list">
+                                <li class="product-options_opt">  
+                                    <input class="catalog-check" type="checkbox">
+                                     XS
+                                </li>
+
+                                <li class="product-options_opt">  
+                                    <input class="catalog-check" type="checkbox">
+                                     S
+                                </li>
+
+                                <li class="product-options_opt">  
+                                    <input class="catalog-check" type="checkbox">
+                                    M
+                                </li>
+
+                                <li class="product-options_opt">  
+                                    <input class="catalog-check" type="checkbox">
+                                     L
+                                </li>
+
+                                <li class="product-options_opt">  
+                                    <input class="catalog-check" type="checkbox">
+                                     XL
+                                </li>
+        
+                            </ul>
+
+                        </details>
+                    </div>
+
+                    <div class="catalog-options-input">
+                        <details class="product-options-input_choose">
+
+                            <summary class="product-options-input_name      product-options-input_hover-pink">
+                                PRICE
+                                <span class="product_arrow">
+                                    <img src="imgs/accordion-arrow_grey.svg" alt="choose">
+                                </span>
+                            </summary>
+
+                            <ul class="catalog-options_list">
+                                <li class="product-options_opt">  
+                                    $100
+                                </li>
+                                <li class="product-options_opt">
+                                    $200
+                                </li>
+                                <li class="product-options_opt">
+                                    $300
+                                </li>
+                            </ul>
+
+                        </details>
+                    </div>
+
+
+
+                    
+
+                    
+                </div>
+
+               
             </form>
         </div>
 
@@ -483,15 +560,19 @@
     </section>
     <nav class="pagination">
         <div class="pagination-box">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a class="active" href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-          </div>
+            <ul class="pagination-list">
+                <li><a href="#"><i class="fa fa-angle-left pagination__item__fa txt_hover-grey" aria-hidden="true"></i></a></li>
+                <li><a class="pagination__item pagination__item_pink" href="#">1</a></li>
+                <li><a class="pagination__item" href="#">2</a></li>
+                <li><a class="pagination__item " href="#">3</a></li>
+                <li><a class="pagination__item" href="#">4</a></li>
+                <li><a class="pagination__item" href="#">5</a></li>
+                <li><a class="pagination__item" href="#">6</a></li>
+                <li><a class="pagination__item" href="#">...</a></li>
+                <li><a class="pagination__item" href="#">20</a></li>
+                <li><a href="#"><i class="fa fa-angle-right pagination__item__fa" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
     </nav>
 
     <section class="black-box">
