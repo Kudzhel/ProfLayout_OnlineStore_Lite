@@ -1565,7 +1565,7 @@ input {
   padding: auto;
 }
 
-input[type="text"] {
+.reg-name {
   border: 1px solid #4D4D4D;
   background: #ffffff !important;
   outline: none;
