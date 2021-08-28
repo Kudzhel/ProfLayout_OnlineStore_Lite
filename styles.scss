@@ -810,6 +810,10 @@ p {
     color: $color-grey1;
   }
 
+  &_grey3 {
+    color: $color-grey3;
+  }
+
   &_black {
     color: #000000;
   }
@@ -830,7 +834,7 @@ p {
   }
 
   &_size-16 {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
   }
@@ -846,6 +850,12 @@ p {
     font-size: 12px;
     line-height: 14px;
   }
+  
+  &_size-11 {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 17px;
+  }
 
   &_link {
     text-decoration: none;
@@ -857,6 +867,10 @@ p {
 
   &_medium {
     font-weight: 400;
+  }
+
+  &_thin {
+    font-weight: 300;
   }
 
   &_display-bl {
@@ -872,12 +886,20 @@ p {
     text-align: center;
   }
 
+  &__margin-r20 {
+    margin-right: 20px;
+  }
+
   &__margin-b48 {
     margin-bottom: 48px;
   }
 
   &__margin-b32 {
     margin-bottom: 32px;
+  }
+
+  &__margin-b22 {
+    margin-bottom: 22px;
   }
 
   &__margin-b65 {
@@ -926,13 +948,13 @@ p {
 .carousel-control-next {
   justify-content: flex-end;
   opacity: 1;
-  top: -240px;
+  top: -33px;
 }
 
 .carousel-control-prev {
   justify-content: flex-start;
   opacity: 1;
-  top: -240px;
+  top: -33px;
 }
 
 .fas {
@@ -979,7 +1001,6 @@ p {
 
 .button {
   padding: 10px 40px;
-  width: 211px;
   position: relative;
   transition: background-color 0.3s;
   
@@ -988,7 +1009,7 @@ p {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    margin-left: 12px;
+    margin-left: 0 12px;
     transition: background-color 0.3s;
   }
 
@@ -1002,6 +1023,14 @@ p {
 
   &_bgc {
     background-color: #fff;
+  }
+
+  &_pad-14 {
+    padding: 14px 25px;
+  }
+
+  &_width-211 {
+    width: 211px;
   }
 
   &__mg-0-auto {
@@ -1018,7 +1047,12 @@ p {
 .cart-pic_white {
   position: absolute;
   display: none;
-  left: 44px;
+  left: 45px;
+  transition: background-color 0.3s;
+}
+
+.cart-pic_pink {
+  margin-right: 10px;
   transition: background-color 0.3s;
 }
 
@@ -1170,7 +1204,8 @@ p {
 }
 
 
-// Catalog
+// CATALOG _____________________________________
+
 
 .param {
   height: 132px;
@@ -1316,6 +1351,127 @@ a {
   font-weight: 400;
 }
 
+
+
+// REGISTRATION _________________________________________________________________
+
+.registration-block {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.reg_form_text {
+  font-size: 13px;
+  line-height: 15px;  
+  color:#B1B1B1;
+  text-align: start;
+  margin-bottom: 34px;   
+}    
+
+ 
+.form input:required {
+background-color: red;
+}
+
+
+.reg_button:hover {
+  transform:scale(1.5);
+  
+}
+
+.reg-radio {
+  margin-bottom: 40px;
+}
+
+
+.form_label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+
+input {
+  margin-bottom: 20px;
+  padding:auto;
+}
+
+input[type="text"] {
+  border: 1px solid $color-grey1; 
+  background: #ffffff !important; 
+  outline: none; 
+  height: 45px; 
+  width: 360px; 
+  font-size: 13px; 
+  font-family: 'Lato';
+  padding-left:16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: $color-grey1;
+}
+
+.reg-email {
+  border: 1px solid $color-grey1; 
+  background: #ffffff !important; 
+  outline: none; 
+  height: 45px; 
+  width: 360px; 
+  padding-left:16px;
+  font-size: 13px; 
+  font-weight: 300;
+  line-height: 16px;
+  color: $color-grey1;   
+}
+
+input[type="password"] {
+  border: 1px solid $color-grey1; 
+  background: #ffffff !important; 
+  outline: none; 
+  height: 45px; 
+  width: 360px; 
+  font-size: 13px; 
+  font-family: 'Lato';
+  padding-left:16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: $color-grey1;
+}
+
+.join-pic_white {
+  position: absolute;
+  display: none;
+  left: 118px;
+  transition: background-color 0.3s;
+}
+
+.join-pic_pink {
+  margin-left: 12px;
+}
+
+.button:hover .join-pic_white {
+  display: block;
+  z-index: 3;
+} 
+
+
+.registration_right-box {
+  margin-left: 128px;
+}
+
+.reg-ul {
+  list-style-image: url("imgs/Corner.svg");
+}
+
+
+.reg-list {
+  padding: 0 23px 16px;
+}
 
  
 
