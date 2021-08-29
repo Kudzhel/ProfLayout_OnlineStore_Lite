@@ -32,8 +32,12 @@ p {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+
+.content {
+  padding: 0 2%;
 }
 
 .container-1600 {
@@ -279,8 +283,8 @@ p {
 }
 
 .pink_vert {
-  height: 92px;
-  width: 12px;
+  min-height: 92px;
+  min-width: 12px;
   margin-right: 16px;
   background-color: $color-pink;
 }
@@ -825,8 +829,16 @@ p {
     color: $color-grey3;
   }
 
+  &_grey4 {
+    color: $color-grey4;
+  }
+
   &_black {
     color: #000000;
+  }
+
+  &_black2 {
+    color: $color-black;
   }
 
   &_white {
@@ -838,6 +850,11 @@ p {
     line-height: 29px;
   }
 
+  &_size-22 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
   &_size-18 {
     font-weight: 300;
     font-size: 18px;
@@ -845,13 +862,13 @@ p {
   }
 
   &_size-16 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 16px;
   }
 
   &_size-14 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 17px;
   }
@@ -865,7 +882,7 @@ p {
   &_size-11 {
     font-weight: 300;
     font-size: 11px;
-    line-height: 17px;
+    line-height: 13px;
   }
 
   &_link {
@@ -901,16 +918,28 @@ p {
     margin-right: 20px;
   }
 
-  &__margin-b48 {
-    margin-bottom: 48px;
+  &__margin-b8 {
+    margin-bottom: 8px;
+  }
+
+  &__margin-b12 {
+    margin-bottom: 12px;
+  }
+
+  &__margin-b22 {
+    margin-bottom: 22px;
   }
 
   &__margin-b32 {
     margin-bottom: 32px;
   }
 
-  &__margin-b22 {
-    margin-bottom: 22px;
+  &__margin-b42 {
+    margin-bottom: 42px;
+  }
+
+  &__margin-b48 {
+    margin-bottom: 48px;
   }
 
   &__margin-b65 {
@@ -1024,7 +1053,34 @@ p {
     transition: background-color 0.3s;
   }
 
-  &_link {
+  &_text-white {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 0 12px;
+    transition: background-color 0.3s;
+  }
+
+  &_text-grey1 {
+    color: $color-grey1;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 13px;
+    margin-left: 0 12px;
+    transition: background-color 0.3s;
+  }
+
+  &_text-grey1-11 {
+    color: $color-grey1;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 17px;
+    margin-left: 0 12px;
+    transition: background-color 0.3s;
+  }
+
+    &_link {
     text-decoration: none;
   }
 
@@ -1032,12 +1088,24 @@ p {
     border: 1px solid $color-pink;
   }
 
+  &_bd-grey {
+    border: 1px solid $color-grey3;
+  }
+
   &_bgc {
     background-color: #fff;
   }
 
+  &_bgc-pink {
+    background-color: $color-pink;
+  }
+
   &_pad-14 {
     padding: 14px 25px;
+  }
+
+  &_pad-10 {
+    padding: 10px 14px;
   }
 
   &_width-211 {
@@ -1052,6 +1120,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &_margin-t24 {
+    margin-top: 24px;
   }
 }
 
@@ -1072,6 +1144,14 @@ p {
 } 
 
 .button:hover .button_text-pink{
+  color: #ffffff;
+} 
+
+.button:hover .button_text-grey1{
+  color: #ffffff;
+} 
+
+.button:hover .button_text-grey1-11{
   color: #ffffff;
 } 
 
@@ -1227,7 +1307,7 @@ p {
 
 .filter {
   position: relative;
-  margin-right: 300px;
+  margin-right: 27%;
 }
 
 .filter-group {
@@ -1413,8 +1493,12 @@ input {
   padding:auto;
 }
 
+.input_margin-b0 {
+  margin-bottom: 0;
+}
+
 .reg-name {
-  border: 1px solid $color-grey1; 
+  border: 1px solid $color-grey3; 
   background: #ffffff !important; 
   outline: none; 
   height: 45px; 
@@ -1428,7 +1512,7 @@ input {
 }
 
 .reg-email {
-  border: 1px solid $color-grey1; 
+  border: 1px solid $color-grey3; 
   background: #ffffff !important; 
   outline: none; 
   height: 45px; 
@@ -1441,7 +1525,7 @@ input {
 }
 
 input[type="password"] {
-  border: 1px solid $color-grey1; 
+  border: 1px solid $color-grey3; 
   background: #ffffff !important; 
   outline: none; 
   height: 45px; 
@@ -1485,11 +1569,139 @@ input[type="password"] {
 }
 
  
+// CART _________________________________________________________________
 
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 128px;
+  padding: 0;
+}
   
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 20px #15151530;
 
-   
-   
+  &_margin-b40 {
+    margin-bottom: 40px;
+  }
+}
+
+.cart-item_info {
+  padding: 22px 22px 31px 22px;
+  width: 390px;
+}
+
+.cart-item_info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cart-item_close {
+  width: 18px;
+}
+
+.cart-info_quant {
+  display: flex;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.cart-form {
+  padding-top: 22px;
+  padding-left: 128px;
+}
+
+.cart-total-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #F5F3F3;
+  padding: 42px;
+  margin-top: 57px;
+  margin-left: 128px;
+}
+
+.cart-total-price_txt {
+  margin-left: 20px;
+} 
+
+
+.cart-total-prise_button-box {
+  padding-top: 17px;
+  margin-top: 21px;
+  border-top: 1px solid $color-grey2;
+  width: 100%;
+}
+
+.cart-total-prise_button {
+  background-color: $color-pink;
+}
+.button-pink {
+  padding: 16px 40px;
+  transition: background-color 0.3s;
+  
+  &_text-white {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    transition: background-color 0.3s;
+  }
+
+  &_link {
+    text-decoration: none;
+  }
+
+  &_bd {
+    border: 1px solid $color-pink;
+  }
+
+  &_bd-grey {
+    border: 1px solid $color-grey3;
+  }
+
+  &_bgc-pink {
+    background-color: $color-pink;
+  }
+
+  &_pad-16 {
+    padding: 16px 42px;
+  }
+
+  &_pad-10 {
+    padding: 10px 14px;
+  }
+
+  &_width-211 {
+    width: 211px;
+  }
+
+  &__mg-0-auto {
+    margin: 0 auto;
+  }
+
+  &_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_margin-t24 {
+    margin-top: 24px;
+  }
+}
+
+.button-pink:hover {
+  background-color: $color-pinkhoover;
+} 
 
       
 
