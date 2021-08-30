@@ -361,6 +361,7 @@ p {
 
 .collections-box {
   margin-top: 65px;
+  padding: 0;
 }
 
 .coll-box__top {
@@ -389,8 +390,6 @@ p {
 }
 
 .coll-box__item-img {
-  width: 100%;
-  position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
