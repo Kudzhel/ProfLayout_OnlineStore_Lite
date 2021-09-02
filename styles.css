@@ -44,7 +44,7 @@ p {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -281,27 +281,30 @@ p {
 
 .block_head {
   background-color: #F1E4E6;
-  height: 764px;
+  max-height: 764px;
 }
 
-.block_head__left {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.block_head_img {
+  width: 100%;
 }
 
 .block_head__right {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 63%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .block_head-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 290px;
-  margin-left: 63px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pink_vert {
@@ -376,43 +379,34 @@ p {
 
 .coll-box__item1 {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 260px;
-  width: 360px;
 }
 
 .coll-box__item-img {
+  width: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.marginbox-h {
+  height: 30px;
+}
+
+.marginbox-v {
+  width: 25px;
 }
 
 .coll-box__item-hover {
   display: none;
   position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .coll-box__item2 {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 180px;
 }
 
 .coll-box__item1:hover .coll-box__item-hover {
@@ -480,7 +474,7 @@ p {
 }
 
 .item {
-  width: 360px;
+  width: 32%;
   position: relative;
   margin-bottom: 30px;
   background-color: #f8f8f8f8;
@@ -645,7 +639,7 @@ p {
 }
 
 .advantage-1 {
-  width: 360px;
+  width: 31%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,7 +709,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
+  padding: 0 2%;
 }
 
 .review {
@@ -799,6 +793,7 @@ p {
   padding-right: 30px;
   color: #070707;
   outline: none;
+  font-size: 14px;
 }
 
 .footer1__forminput:required {
@@ -817,6 +812,7 @@ p {
   padding-right: 25px;
   color: white;
   outline: none;
+  font-size: 14px;
 }
 
 .footer1__formsubmit:hover {
@@ -1904,5 +1900,74 @@ input[type="password"] {
 
 .button-pink:hover {
   background-color: #d84659;
+}
+
+@media screen and (max-width: 768px) {
+  .block_flex {
+    max-height: 368px;
+  }
+  .block_head_img {
+    width: 52%;
+    margin-left: 88px;
+  }
+  .head_h1 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .head_h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .head_h2-pink {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .item {
+    width: 49%;
+  }
+  .add-link {
+    top: 25%;
+  }
+  .black-box {
+    height: 610px;
+  }
+  .bb-advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantage-1 {
+    width: 50%;
+    margin-bottom: 48px;
+  }
+  .advantage-1__margin-b0 {
+    margin-bottom: 0;
+  }
+  .footer1-bg {
+    height: 614px;
+    background-image: url(imgs/footer_bg-img2_768.jpg);
+  }
+  .footer1-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer1-quote {
+    margin-bottom: 60px;
+  }
+  .footer2-content__left {
+    margin-left: 20px;
+  }
+  .footer2-content__right {
+    margin-right: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
